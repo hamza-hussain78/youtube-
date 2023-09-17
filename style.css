@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+ li a:hover{
+    color:red;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+/* menu-btn */
+.menu-bar{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        background: #333;
+        top: 160px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-bar{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    /* padding-left: -200px; */
+    /* margin-left: 0px; */
+    margin-right: 375px;
+    /* padding-right: 25px; */
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.col-2 ul li{
+    margin-top: 20px;
+    font-size: 18px;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+.col-2{
+    flex-basis: 50px;
+    min-width: 200px;
+}
+.row .col-2 img{
+    border-radius: 20px;
+}
+.col-2  img{
+    /* max-width: 100%; */
+    padding: 50px 0;
+    border-radius: 20px;
+
+}
+
+.col-2 img{
+    width: 250px;
+    height: 300px;
+    margin-left: 100px;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 30px 0;
+    background-color: #04033f;
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.header{
+    background :radial-gradient(#fff, #9694f6) ;
+}
+
+.btn:hover{
+    background-color: #6c6af1;
+}
+
+
+
